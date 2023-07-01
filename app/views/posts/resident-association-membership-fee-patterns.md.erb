@@ -1,0 +1,36 @@
+---
+path: "/resident-association-membership-fee-patterns"
+date: 2023-06-29
+title: "Resident Association Series #2 - Resident Associations & Rukun Tetangga in Malaysia"
+keywords: 'Resident Association, Rukun Tetangga, JMB, MC, Malaysia, Data Science, AI, Machine Learning, Python, Ruby, Ruby on Rails, Numpy, MatPlotLib'
+---
+It has been a while since my last blog post. In this blog post, we will be looking at the data of the paying residents trend whenever we announce a new membership fee. One of the reasons I am analyzing this is because I am currently studying for my Master's degree of Computer Science (AI) in UK. I am currently looking for a job as a data scientist, if you know of any opportunities, do contact me at cyusheng93@gmail.com.
+
+Without further ado, let's get down to the nitty gritty. Before we start looking at the data, let me provide a big of context. Depending on specific Resident Associations (RA) or Rukun Tetangga (RT), the membership payment collection period always varies. The main periods are yearly, bi-annually and quarterly. The neighborhood RA that I volunteer at collect the membership payments annually. I would personally advise RA and RT to implement annual membership payments, if possible. I would wholeheartedly recommend any RA to always be collecting membership fees annually.
+
+The first reason for this is efficiency due to less effort and less paperwork for all volunteers involved. My neighbourhood's RA regularly proceesses more than 700 payments annually. You can do the maths and understand if we ever implemented bi-annually/quarterly/monthly payment, the payments to process would be 2x/4x/12x. Secondly, most RA and RT also issue out new membership house tags and car stickers for every new year. This allows the RA and its security personnel to immediately tell which car or house belongs to a current paying member. By having a non-annual payment collection fees, issuing gate tags and car stickers for partial payments become a bit tricker. Additionally, you might need to chase residents for money owed which means more effort and a less than ideal situation as no one likes asking people to pay up. Alas, the real world function differently, I understand that some RAs and RTs implement bi-annually or quarterly payment periods because of residents' financial constraints. This is a situation that can't be helped and which is why I created BUCA [www.buca.my] which helps Resident Associations reduce their workload while viewing  important data at a glance.
+
+Now, onto our actual data. A payer here refers to a specific house in the neigborhood and one house only ever has one payment. The data was massaged and some assumptions about the data had to be made in order for us to visualize it well.
+
+Fun Fact: A house might generally make a more than one payment to resident association even if it is an annual collection. This is because of issues like underpaying or additional car stickers request.
+
+For a new year, our neighbourhood's RA usually announces the membership fee collection period through physical fliers and/or whatsapp messages. Assuming that Day 0 is the day we announce our new membership fee collection period, we are able to see how the paying patterns of residents over three months. The graph below shows us this data for the last three years.
+
+[Picture]
+
+It is interesting to note that in general, about [Insert here]% of our residents pay the membership fee in the first three months.
+
+We actually have about [insert] years of data but it gets a bit harder to see but I will share it nonetheless. The below shows the full data for the various years.
+
+[Picture]
+
+Fun Fact 2: For the year [insert] (red line), we can see that there were bigger amount of spikes than normal. Firstly, this was the first year we tried out a four physical membership fee collection drive (every alternating sat/sun) over the course of one month. I advocated for this with my committee as I believe it was a good way for us to meet our residents while also building a sense of camarederie between committee members. Unfortunately, this idea did not sit well with less than a handful of committee members as they complained about unecessary workload for the committee members but I believed the benefits far outweighed the cost for only four days out of 365 days. It was also a voluntary process that had the backing of some core/executive committee members which is why it went through.
+
+Fun Fact 3: We also allowed cash collection for Year 2020, however, this was an extremely bad idea. Firstly, handling any amounts of physical cash in RAs and RTs is always trickly and creates a room for gross negligence/theft (there has been stories). Additionally, it was a pain to tally up the cash at the end of a long and exhausting morning. Thirdly, we also had to physically travel to the bank to deposit the cash and only certain executive members are allowed to do that? [TBC]
+
+Fun Fact 4: We have also phased out cheque payments over the years. Firstly as we have seen a few times in this post, this means extra effort on certain committee members. Secondly, we have had bounce cheques after issuing gate tags and car stickers. However, it is important to add the payees of the bounced cheques usually just resort to online transfer/cash in the end.
+
+That's all for this post! I hope you were able to learn something new and see some interesting data from this blog post. Thinking out loud, for the next series, I will perhaps be looking at using some AI/machine learning algorithms to cluster residents based on info such as their paying patterns, the number of cars they have in their households and etc. Another section of the data I would be interested to look at would be the car entries into our neighbourhood, specifically relating to visitors and residents who are not members of the Resident Association. Stay tuned for the next post!
+
+The code above was produced in Jupyter Notebook in Python. This code and data can be accessed here:
+The data has been scrambled so as to hide any important information in regards to payees and the application.

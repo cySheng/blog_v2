@@ -51,6 +51,9 @@ gem "bootsnap", require: false
 # for slim templates
 gem "slim-rails"
 
+# for rendering markdown to html
+gem 'maildown'
+
 # SEO purposes
 gem "meta-tags"
 
