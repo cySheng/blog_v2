@@ -1,0 +1,6 @@
+section.blog-posts
+  - @blog_posts.each do |bp|
+    section.blog-post-preview
+      h1 = link_to bp['title'], blog_path(title: bp['link'])
+      h2 = bp['date']
+      p = bp['excerpt']

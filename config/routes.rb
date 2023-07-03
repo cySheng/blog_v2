@@ -4,5 +4,12 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
-  resources :posts
+  resources :blog, only: [], controller: 'posts' do
+    collection do
+      get :index
+
+    end
+  end
+
+  get :show, path: '/:title', as: :blog, controller: 'posts'
 end

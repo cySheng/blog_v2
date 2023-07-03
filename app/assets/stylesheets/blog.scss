@@ -1,0 +1,26 @@
+.blog-posts {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.blog-post-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+
+.blog-post-preview {
+  padding-bottom: 1.3rem;
+  h1 {
+    margin-bottom: 0.4rem;
+  }
+  h2 {
+    margin-bottom: 0.6rem;
+    font-size: 1.6rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: 1.2rem;
+  }
+}
