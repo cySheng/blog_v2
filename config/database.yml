@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
+  host: db
   database: blog_v2_production
   username: blog_v2
   password: <%= ENV["BLOG_V2_DATABASE_PASSWORD"] %>
