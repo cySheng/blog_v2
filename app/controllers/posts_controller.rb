@@ -34,4 +34,8 @@ class PostsController < ApplicationController
       puts "Error parsing JSON: #{e.message}"
     end
   end
+
+  def check_deploy
+    render plain: 'deploy_successful'
+  end
 end

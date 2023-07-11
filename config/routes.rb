@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "home#index"
 
+  get '/check_deploy', to: 'posts#check_deploy'
+
   resources :blog, only: [], controller: 'posts' do
     collection do
       get :index
