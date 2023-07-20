@@ -39,6 +39,7 @@ class PostsController < ApplicationController
           title: :title,
         }
 
+      render @blog_post["link"]
       # display_meta_tags
 
     rescue Errno::ENOENT => e
