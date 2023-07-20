@@ -1,12 +1,12 @@
 doctype html
 html
   head
-    title BlogV2
+    / title BlogV2
     meta name="viewport" content="width=device-width,initial-scale=1"
     = csrf_meta_tags
     = csp_meta_tag
 
-    = display_meta_tags site: "Sheng - Web Developer and Data Scientist"
+    = display_meta_tags
 
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_importmap_tags
@@ -16,7 +16,7 @@ html
       section.header
         h1
           = link_to 'Sheng', root_path
-        section.header-sidebar
-          p
-            = link_to 'Blog', blog_index_path
+        / section.header-sidebar
+        /   p
+        /     = link_to 'Blog', blog_index_path
     = yield

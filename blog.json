@@ -1,11 +1,6 @@
 {
-  "posts": [  {
-    "postID": 2,
-    "title": "Resident Association Series #2 - Paying patterns of residents",
-    "date": "2023-06-29",
-    "link": "resident-association-membership-fee-patterns",
-    "excerpt": "It has been a while since my last blog post. In this blog post, we will be looking at the data of the paying residents trend whenever we announce a new membership fee. This data has been..."
-  },
+  "posts": [
+
   {
     "postID": 1,
     "title": "Resident Association Series #1 - Resident Associations & Rukun Tetangga in Malaysia",
@@ -15,3 +10,11 @@
   }
   ]
 }
+
+  // {
+  //   "postID": 2,
+  //   "title": "Resident Association Series #2 - Paying patterns of residents",
+  //   "date": "2023-06-29",
+  //   "link": "resident-association-membership-fee-patterns",
+  //   "excerpt": "In this blog post, we will be looking at the data of the paying residents trend whenever we announce a new membership fee. One of the reasons I am.."
+  // },

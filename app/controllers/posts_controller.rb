@@ -23,15 +23,26 @@ class PostsController < ApplicationController
 
     begin
       file = File.read(file_path)
+
       File.read(file_path)
       data = JSON.parse(file)
-      print(params[:title])
-      @blog_post = data["posts"].detect { |post| post[:title] == params[:title] }
+
+      @blog_post = data["posts"].find { |post| post["link"] == params[:title] }
+
+      set_meta_tags title: @blog_post["title"],
+        # description: ,
+        keywords: 'Data Scientist, Software Developer, UK, Malaysia, Resident Association, Rukun Tetangga',
+        og: {
+          title: :title,
+        },
+        twitter: {
+          title: :title,
+        }
+
+      # display_meta_tags
 
     rescue Errno::ENOENT => e
-      puts "File not found: #{file_path}"
-    rescue JSON::ParserError => e
-      puts "Error parsing JSON: #{e.message}"
+      raise ActionController::RoutingError.new('Not Found')
     end
   end
 
