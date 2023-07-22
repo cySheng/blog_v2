@@ -13,5 +13,7 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'sitemap.xml', to: ->(_) { head :ok }
+
   get :show, path: '/:title', as: :blog, controller: 'posts'
 end
