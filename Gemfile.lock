@@ -118,6 +118,7 @@ GEM
     maildown (3.3.1)
       actionmailer (>= 4.0.0)
       kramdown-parser-gfm
+    malloc (1.5.1)
     marcel (1.0.2)
     matrix (0.4.2)
     meta-tags (2.18.0)
@@ -259,6 +260,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   maildown
+  malloc
   meta-tags
   pg (~> 1.1)
   pry-rails
@@ -276,7 +278,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.1.4p223
+   ruby 3.2.2p53
 
 BUNDLED WITH
    2.4.12
